@@ -44,7 +44,17 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
+  /*---------------------*\
+    #Footer
+\*----------------------*/
+footer{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .tabs{
+  margin-block: 2em;
+}
   .profile {
     max-height: 12rem;
   }
@@ -52,7 +62,7 @@
     font-size: 1.2em;
   }
 /*---------------------*\
-      #3 ways
+    #3 ways
 \*----------------------*/
   .threeWays .container {
     margin-inline: 1em;

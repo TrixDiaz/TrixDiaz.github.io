@@ -70,7 +70,7 @@
   font-size: xxx-large;
 }
 /*---------------------*\
-      #Text transform
+    #Text transform
 \*----------------------*/
 .uppercase-text {
   text-transform: uppercase;
@@ -86,7 +86,7 @@
 }
 
 /*---------------------*\
-      #Text Colors 
+    #Text Colors 
 \*----------------------*/
 .text-primary {
   color: var(--primary);
@@ -113,7 +113,7 @@
   color: var(--dark);
 }
 /*---------------------*\
-      #Background Colors 
+    #Background Colors 
 \*----------------------*/
 .bg-primary {
   background-color: var(--primary);
@@ -140,7 +140,7 @@
   background-color: var(--dark);
 }
 /*---------------------*\
-      #Buttons 
+    #Buttons 
 \*----------------------*/
 button {
   border-radius: 1em;
@@ -159,7 +159,7 @@ button:hover {
   cursor: pointer;
 }
 /*---------------------*\
-      #Reusable 
+    #Reusable 
 \*----------------------*/
 img {
   max-width: 100%;
@@ -199,7 +199,7 @@ img {
   gap: 1.25rem;
 }
 /*---------------------*\
-      #Grid Item 
+    #Grid Item 
 \*----------------------*/
 .grid-item-1 {
   grid-row: span 1;
@@ -210,7 +210,7 @@ img {
   grid-column: span 2;
 }
 /*---------------------*\
-      #Padding Block
+    #Padding Block
 \*----------------------*/
 .py-0 {
   padding-block: 0.5em;
@@ -231,7 +231,7 @@ img {
   padding-block: 5em;
 }
 /*---------------------*\
-      #Padding Inline
+    #Padding Inline
 \*----------------------*/
 .px-0 {
   padding-inline: 0.5em;
@@ -252,7 +252,7 @@ img {
   padding-inline: 5em;
 }
 /*---------------------*\
-      #Margin Block
+    #Margin Block
 \*----------------------*/
 .my-0 {
   margin-block: 0.5em;
@@ -273,7 +273,7 @@ img {
   margin-block: 5em;
 }
 /*---------------------*\
-      #Margin Inline
+    #Margin Inline
 \*----------------------*/
 .mx-0 {
   margin-inline: 0.5em;
@@ -294,7 +294,7 @@ img {
   margin-inline: 5em;
 }
 /*---------------------*\
-      #SVG Icon 
+    #SVG Icon 
 \*----------------------*/
 svg {
   width: 1.5em;
@@ -302,7 +302,7 @@ svg {
   cursor: pointer;
 }
 /*---------------------*\
-      #Particles
+    #Particles
 \*----------------------*/
 #particles-js {
   position: absolute;
@@ -310,14 +310,14 @@ svg {
   height: 100%;
 }
 /*---------------------*\
-      #Body
+    #Body
 \*----------------------*/
 body {
   overflow-x: hidden; /* Disalbed Horizontal Scroll */
   font-family: "Poppins", sans-serif;
 }
 /*---------------------*\
-      #Navigation
+    #Navigation
 \*----------------------*/
 nav {
   padding: 5px 5%;
@@ -466,7 +466,7 @@ nav ul li a:hover {
   border-bottom-right-radius: 70%;
 }
 /*---------------------*\
-      #Second Section
+    #Second Section
 \*----------------------*/
 .second-content {
   display: flex;
@@ -474,7 +474,7 @@ nav ul li a:hover {
   align-items: center;
 }
 /*---------------------*\
-      #Third Section
+    #Third Section
 \*----------------------*/
 .moto {
   display: flex;
@@ -535,7 +535,7 @@ nav ul li a:hover {
   /* border-radius: 50%;  */
 }
 /*---------------------*\
-      #Fourth Section
+    #Fourth Section
 \*----------------------*/
 /* .fourth-section{
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/images/working-people.png');
@@ -553,7 +553,7 @@ nav ul li a:hover {
 }
 
 /*---------------------*\
-      #Fifth Section
+    #Fifth Section
 \*----------------------*/
 .fifth-content {
   display: flex;
@@ -565,11 +565,11 @@ nav ul li a:hover {
   margin-bottom: 2em;
 }
 /*---------------------*\
-      #Sixth Section
+    #Sixth Section
 \*----------------------*/
 
 /*---------------------*\
-      #Footer Section
+    #Footer Section
 \*----------------------*/
 footer {
   display: flex;
@@ -586,7 +586,7 @@ footer .tabs a {
 }
 
 /*---------------------*\
-      #Carousel Section
+    #Carousel Section
 \*----------------------*/
 @keyframes scroll {
   0% {
@@ -638,7 +638,7 @@ footer .tabs a {
 }
 
 /*---------------------*\
-      #Circle Section
+    #Circle Section
 \*----------------------*/
 .outer-circle {
   position: relative;
