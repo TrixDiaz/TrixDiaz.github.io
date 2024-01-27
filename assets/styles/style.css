@@ -84,7 +84,9 @@
 .bold {
   font-weight: bold;
 }
-
+.text-wrap {
+  word-wrap: break-word;
+}
 /*---------------------*\
     #Text Colors 
 \*----------------------*/

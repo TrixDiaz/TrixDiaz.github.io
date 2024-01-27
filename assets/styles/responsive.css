@@ -61,37 +61,86 @@
   /*---------------------*\
     #Fourth Section
 \*----------------------*/
-  .fourth-section .grid-container-2{
+  .fourth-section .grid-container-2 {
     grid-template-columns: 1fr;
   }
   .description-title,
-  .description-subtitle{
+  .description-subtitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .description-title strong{
+  .description-title strong {
     padding-inline: 0;
   }
-  .description-title span{
+  .description-title span {
     padding-left: 0;
   }
-  .description-button{
+  .description-subtitle {
+    margin-inline: 0;
+  }
+  .description-button {
     margin-block: 1em;
   }
-}
-/*---------------------*\
+  /*---------------------*\
     #six Section
 \*----------------------*/
-.six-section .grid-container-3{
-  grid-template-columns: 1fr;
-}
-.six-section .grid-container-3 .content-image{
-  width: 100%;
+  .six-section .grid-container-3 {
+    grid-template-columns: 1fr;
+  }
+  .six-section .grid-container-3 .content-image {
+    width: 100%;
+  }
+  .content-title p {
+    font-size: 2em;
+  }
+  .content-subtitle {
+    margin-block: 0;
+    margin-top: 1em;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /*---------------------*\
+    #Landing page
+\*----------------------*/
+  .landingPage .container {
+    margin-inline: 0;
+  }
+  .first-content div {
+    margin-inline: 1.5em;
+  }
+  /*---------------------*\
+    #3 ways
+\*----------------------*/
+  .threeWays {
+    padding-block: 1em;
+  }
+  .threeWays .container {
+    margin-inline: 1em;
+  }
+  /*---------------------*\
+    #Fourth Content
+\*----------------------*/
+  .fourth-section .grid-container-2 {
+    margin-inline: 1em;
+  }
+  .fourth-section .grid-container-2 {
+    gap: 0;
+  }
+  /*---------------------*\
+    #Six Section
+\*----------------------*/
+  .six-section {
+    padding-block: 0;
+  }
+  .six-section .container {
+    margin-inline: 1em;
+  }
+  .six-section .grid-container-3 {
+    gap: 0;
+  }
   /*---------------------*\
     #Footer
 \*----------------------*/
@@ -99,9 +148,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-block: 2em;
   }
   footer .tabs {
     margin-block: 2em;
+  }
+  .footer .container {
+    margin-inline: 1em;
   }
   .profile {
     max-height: 12rem;
