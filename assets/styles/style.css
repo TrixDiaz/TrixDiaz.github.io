@@ -519,7 +519,7 @@ nav ul li a:hover {
 .moto-subtitle {
   padding-left: 0.5em;
 }
-/* .parent-third {
+ .parent-third {
   position: relative;
   z-index: -30;
 }
@@ -547,7 +547,7 @@ nav ul li a:hover {
   background-size: 5px 5px;
   filter: blur(1px);
   z-index: -30;
-} */
+} 
 /*---------------------*\
     #Fourth Section
 \*----------------------*/
@@ -562,8 +562,11 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
 }
+.description-button{
+  margin-inline: 1.5em;
+}
 .to-build {
-  margin-right: 0.2em;
+  margin-right: 5px;
 }
 
 /*---------------------*\
@@ -585,6 +588,9 @@ nav ul li a:hover {
 /*---------------------*\
     #Footer Section
 \*----------------------*/
+.footer{
+  margin-block: 2em;
+}
 footer {
   display: flex;
   flex-direction: row;
