@@ -373,7 +373,7 @@ nav ul li a:hover {
 .hamburger .line {
   width: 25px;
   height: 1px;
-  background-color: #1f1f1f;
+  background-color: var(--light);
   display: block;
   margin: 7px auto;
   transition: all 0.3s ease-in-out;
@@ -413,7 +413,7 @@ nav ul li a:hover {
   padding: 20% 0;
   background: rgba(255, 255, 255);
   transition: all 0.5s ease-in;
-  z-index: 2;
+  z-index: 30;
 }
 .active {
   left: 0;
@@ -590,7 +590,7 @@ footer .tabs a {
 }
 
 /*---------------------*\
-      #Carouse Section
+      #Carousel Section
   \*----------------------*/
 @keyframes scroll {
   0% {
