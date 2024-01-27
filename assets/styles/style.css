@@ -477,7 +477,6 @@ nav ul li a {
   padding: 4px 8px;
   border-radius: 5px;
 }
-nav ul li a.scrolled { color: var(--dark); }
 nav ul li a:hover {
   color: var(--primary);
 }
@@ -519,7 +518,7 @@ nav ul li a:hover {
 }
 
 .menubar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -60%;
   display: flex;
