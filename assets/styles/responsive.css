@@ -1,0 +1,69 @@
+/* Responsive for tablet */
+@media screen and (max-width: 768px) {
+/*---------------------*\
+    #Landing Page
+\*----------------------*/
+  .landingPage {
+    padding-block: 0;
+  }
+  .landingPage {
+    margin-block: 3em;
+  }
+  .landingPage div {
+    grid-template-columns: 1fr;
+  }
+  .landingPage .container {
+    margin-inline: 1em;
+  }
+  .profile-section {
+    order: -1; /* Move the profile-section to the top for smaller screens */
+    margin-bottom: 1em;
+  }
+/*---------------------*\
+    #First Section
+\*----------------------*/
+  .title-buttons button {
+    margin-block: 0.5em;
+  }
+  .title-buttons button:nth-child(2) {
+    padding-inline: 1.8em;
+  }
+  .first-content {
+    order: 1; /* Move the first-content to the bottom for smaller screens */
+  }
+/*---------------------*\
+    #Navigation
+\*----------------------*/
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+  .profile {
+    max-height: 12rem;
+  }
+  #typing-text {
+    font-size: 1.2em;
+  }
+/*---------------------*\
+      #3 ways
+\*----------------------*/
+  .threeWays .container {
+    margin-inline: 1em;
+  }
+  .threeWays .grid-container-3 {
+    grid-template-columns: 1fr;
+  }
+  .moto {
+    margin-block: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+}

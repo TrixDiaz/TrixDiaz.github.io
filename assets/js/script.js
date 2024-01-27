@@ -1,12 +1,3 @@
-// NavBar
-const mobileNav = document.querySelector(".hamburger");
-const navbar = document.querySelector(".menubar");
-
-const toggleNav = () => {
-  navbar.classList.toggle("active");
-  mobileNav.classList.toggle("hamburger-active");
-};
-mobileNav.addEventListener("click", () => toggleNav());
 // Particles
 particlesJS("particles-js", {
     particles: {
@@ -113,6 +104,7 @@ particlesJS("particles-js", {
     },
     retina_detect: true,
   });
+  // Change text 
   function changeText(button) {
       button.textContent = "Download";
   }
@@ -120,7 +112,7 @@ particlesJS("particles-js", {
       button.textContent = "Resume";
   }
   // Loop Typing Text
-  const texts = ["Web Developer", "IT Specialist", "Mobile Developer", "IT Technician"];
+  const texts = ["Web Developer", "IT Specialist", "App Developer", "IT Technician"];
   
   const typingSpeed = 100; // Adjust this value to control the typing speed (in milliseconds)
   
@@ -144,4 +136,15 @@ particlesJS("particles-js", {
   }
   
   typeText(texts[0], 0); // Start the typing animation with the first text
+
+  // NavBar
+const mobileNav = document.querySelector(".hamburger");
+const navbar = document.querySelector(".menubar");
+
+const toggleNav = () => {
+  navbar.classList.toggle("active");
+  mobileNav.classList.toggle("hamburger-active");
+};
+mobileNav.addEventListener("click", () => toggleNav());
+
   
