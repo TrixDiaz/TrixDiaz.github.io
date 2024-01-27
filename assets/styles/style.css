@@ -333,6 +333,67 @@ svg {
   height: 100%;
 }
 /*---------------------*\
+    #Dotted Background
+\*----------------------*/
+.dotted {
+  position: relative;
+  z-index: -30;
+}
+
+.dotted::before,
+.dotted::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, var(--primary) 1px, transparent 1px);
+  background-size: 5px 5px;
+  filter: blur(1px);
+  z-index: -30;
+}
+
+.dotted::before {
+  top: 15%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.dotted::after {
+  bottom: -80px;
+  right: -100px;
+  width: 200px;
+  height: 150px;
+}
+.dotted-middle {
+  position: relative;
+  z-index: -30;
+}
+
+.dotted-middle::before,
+.dotted-middle::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, var(--primary) 1px, transparent 1px);
+  background-size: 5px 5px;
+  filter: blur(1px);
+  z-index: -30;
+}
+
+.dotted-middle::before {
+  top: 50%;
+  left: 0;
+  transform: translate(-30%, -50%);
+}
+
+.dotted-middle::after {
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 180px;
+}
+/*---------------------*\
     #Body
 \*----------------------*/
 body {
@@ -519,35 +580,6 @@ nav ul li a:hover {
 .moto-subtitle {
   padding-left: 0.5em;
 }
- .parent-third {
-  position: relative;
-  z-index: -30;
-}
-.parent-third::before {
-  content: "";
-  position: absolute;
-  top: 15%;
-  left: 0;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(circle, var(--primary) 1px, transparent 1px);
-  background-size: 5px 5px;
-  filter: blur(1px);
-  z-index: -30;
-}
-.parent-third::after {
-  content: "";
-  position: absolute;
-  bottom: -80px;
-  right: -100px;
-  width: 200px;
-  height: 150px;
-  background: radial-gradient(circle, var(--primary) 1px, transparent 1px);
-  background-size: 5px 5px;
-  filter: blur(1px);
-  z-index: -30;
-} 
 /*---------------------*\
     #Fourth Section
 \*----------------------*/
