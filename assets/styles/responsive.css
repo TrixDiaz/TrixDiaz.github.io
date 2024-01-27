@@ -1,6 +1,16 @@
 /* Responsive for tablet */
 @media screen and (max-width: 768px) {
-/*---------------------*\
+  /*---------------------*\
+    #Navigation
+\*----------------------*/
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+
+  /*---------------------*\
     #Landing Page
 \*----------------------*/
   .landingPage {
@@ -19,7 +29,7 @@
     order: -1; /* Move the profile-section to the top for smaller screens */
     margin-bottom: 1em;
   }
-/*---------------------*\
+  /*---------------------*\
     #First Section
 \*----------------------*/
   .title-buttons button {
@@ -31,47 +41,73 @@
   .first-content {
     order: 1; /* Move the first-content to the bottom for smaller screens */
   }
-/*---------------------*\
-    #Navigation
-\*----------------------*/
-  .hamburger {
-    display: block;
-  }
-  nav ul {
-    display: none;
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
   /*---------------------*\
-    #Footer
+    #Second Section
 \*----------------------*/
-footer{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-footer .tabs{
-  margin-block: 2em;
-}
-  .profile {
-    max-height: 12rem;
+
+  .profile-section {
+    order: -1; /* Move the profile-section to the top for smaller screens */
+    margin-bottom: 1em;
   }
-  #typing-text {
-    font-size: 1.2em;
-  }
-/*---------------------*\
+  /*---------------------*\
     #3 ways
 \*----------------------*/
-  .threeWays .container {
-    margin-inline: 1em;
-  }
   .threeWays .grid-container-3 {
     grid-template-columns: 1fr;
   }
   .moto {
     margin-block: 1em;
+  }
+  /*---------------------*\
+    #Fourth Section
+\*----------------------*/
+  .fourth-section .grid-container-2{
+    grid-template-columns: 1fr;
+  }
+  .description-title,
+  .description-subtitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .description-title strong{
+    padding-inline: 0;
+  }
+  .description-title span{
+    padding-left: 0;
+  }
+  .description-button{
+    margin-block: 1em;
+  }
+}
+/*---------------------*\
+    #six Section
+\*----------------------*/
+.six-section .grid-container-3{
+  grid-template-columns: 1fr;
+}
+.six-section .grid-container-3 .content-image{
+  width: 100%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /*---------------------*\
+    #Footer
+\*----------------------*/
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .tabs {
+    margin-block: 2em;
+  }
+  .profile {
+    max-height: 12rem;
+  }
+  #typing-text {
+    font-size: 1.2em;
   }
 }
 

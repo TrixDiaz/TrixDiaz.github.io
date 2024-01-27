@@ -210,6 +210,27 @@ img {
   grid-column: span 2;
 }
 /*---------------------*\
+    #Padding left
+\*----------------------*/
+.pl-0 {
+  padding-left: 0.5em;
+}
+.pl-1 {
+  padding-left: 1em;
+}
+.pl-2 {
+  padding-left: 2em;
+}
+.pl-3 {
+  padding-left: 3em;
+}
+.pl-4 {
+  padding-left: 4em;
+}
+.pl-5 {
+  padding-left: 5em;
+}
+/*---------------------*\
     #Padding Block
 \*----------------------*/
 .py-0 {
@@ -476,17 +497,17 @@ nav ul li a:hover {
 /*---------------------*\
     #Third Section
 \*----------------------*/
-.moto {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
 .moto-numbers {
   position: absolute;
   z-index: -10;
   font-weight: bold;
   font-size: 7.5em;
-  /* top: 7.5em; */
+}
+.moto-title,
+.moto-subtitle {
+  position: relative;
+  color: var(--secondary);
+  margin-left: 0.8em;
 }
 .moto-title {
   margin-top: 3em;
@@ -496,13 +517,7 @@ nav ul li a:hover {
 .moto-subtitle {
   padding-left: 0.5em;
 }
-.moto-title,
-.moto-subtitle {
-  position: relative;
-  color: var(--secondary);
-  margin-left: 0.8em;
-}
-.parent-third {
+/* .parent-third {
   position: relative;
   z-index: -30;
 }
@@ -518,22 +533,19 @@ nav ul li a:hover {
   background-size: 5px 5px;
   filter: blur(1px);
   z-index: -30;
-  /* border-radius: 50%;  */
 }
 .parent-third::after {
   content: "";
   position: absolute;
   bottom: -80px;
   right: -100px;
-  /* transform: translate(-50%, -50%); */
   width: 200px;
   height: 150px;
   background: radial-gradient(circle, var(--primary) 1px, transparent 1px);
   background-size: 5px 5px;
   filter: blur(1px);
   z-index: -30;
-  /* border-radius: 50%;  */
-}
+} */
 /*---------------------*\
     #Fourth Section
 \*----------------------*/
