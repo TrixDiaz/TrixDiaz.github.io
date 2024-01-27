@@ -104,9 +104,10 @@ particlesJS("particles-js", {
     },
     retina_detect: true,
   });
+  
   // Change text 
   function changeText(button) {
-      button.textContent = "Download";
+      button.textContent = "Click to View";
   }
   function resetText(button) {
       button.textContent = "Resume";
@@ -147,4 +148,43 @@ const toggleNav = () => {
 };
 mobileNav.addEventListener("click", () => toggleNav());
 
-  
+// Scrolled 
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('nav');
+  var scrolled = window.scrollY > 0;
+
+  if (scrolled) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+
+// Bottom to Top
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('nav');
+  var scrolled = window.scrollY > 0;
+
+  if (scrolled) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+
+  // Show or hide the scroll-to-top button
+  var scrollToTopButton = document.querySelector('.scroll-to-top');
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = 'block';
+  } else {
+    scrollToTopButton.style.display = 'none';
+  }
+});
+
+// Function to smoothly scroll to the top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
