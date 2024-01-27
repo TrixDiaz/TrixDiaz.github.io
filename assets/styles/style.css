@@ -1,0 +1,871 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+/*---------------------*\
+  #Reset 
+\*----------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   
+}
+/*---------------------*\
+    #Custom Scrollable side   
+\*----------------------*/
+/* The whole scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* The whole Scrollbar Track / Vertical Track */
+::-webkit-scrollbar-track {
+  background: #d1e5ff;
+}
+
+/* The scrollbar thumb or the hand on track */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#083817, #227411);
+  border-radius: 1rem;
+}
+/*---------------------*\
+    #Colors 
+\*----------------------*/
+:root {
+  --primary: #7dfe81;
+  --secondary: #e3e3e3;
+  --info: #86a7fc;
+  --warning: #fde767;
+  --light: #ffffff;
+  --gray: #413f42;
+  --dark: #020a05;
+  --bg-green: #295c2f;
+}
+/*---------------------*\
+    #Text Size 
+\*----------------------*/
+.text-xs {
+  font-size: x-small;
+}
+.text-sm {
+  font-size: small;
+}
+.text-md {
+  font-size: medium;
+}
+.text-lg {
+  font-size: large;
+}
+.text-xl {
+  font-size: larger;
+}
+.text-xxl {
+  font-size: xx-large;
+}
+.text-xxxl {
+  font-size: xxx-large;
+}
+/*---------------------*\
+      #Text transform
+  \*----------------------*/
+.uppercase-text {
+  text-transform: uppercase;
+}
+.gradient-text {
+  background-image: linear-gradient(to bottom, var(--bg-green), var(--dark));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.bold {
+  font-weight: bold;
+}
+
+/*---------------------*\
+      #Text Colors 
+  \*----------------------*/
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-info {
+  color: var(--info);
+}
+.text-warning {
+  color: var(--warning);
+}
+.text-light {
+  color: var(--light);
+}
+.text-gray {
+  color: var(--gray);
+}
+.text-green {
+  color: var(--bg-green);
+}
+.text-dark {
+  color: var(--dark);
+}
+/*---------------------*\
+      #Background Colors 
+  \*----------------------*/
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-info {
+  background-color: var(--info);
+}
+.bg-warning {
+  background-color: var(--warning);
+}
+.bg-light {
+  background-color: var(--light);
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+.bg-green {
+  background-color: var(--bg-green);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+/*---------------------*\
+      #Buttons 
+  \*----------------------*/
+button {
+  border-radius: 1em;
+  padding-inline: 1em;
+  padding-block: 0.2em;
+  background-color: transparent;
+  font-weight: 500;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--light);
+  color: var(--dark);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+/*---------------------*\
+      #Reusable 
+  \*----------------------*/
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.container {
+  max-width: 100%;
+  margin-inline: 5rem;
+}
+
+.container-fluid {
+  max-width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+/*---------------------*\
+      #Grid Item 
+  \*----------------------*/
+.grid-item-1 {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+.grid-item-2 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+/*---------------------*\
+      #Padding Block
+  \*----------------------*/
+.py-0 {
+  padding-block: 0.5em;
+}
+.py-1 {
+  padding-block: 1em;
+}
+.py-2 {
+  padding-block: 2em;
+}
+.py-3 {
+  padding-block: 3em;
+}
+.py-4 {
+  padding-block: 4em;
+}
+.py-5 {
+  padding-block: 5em;
+}
+/*---------------------*\
+      #Padding Inline
+  \*----------------------*/
+.px-0 {
+  padding-inline: 0.5em;
+}
+.px-1 {
+  padding-inline: 1em;
+}
+.px-2 {
+  padding-inline: 2em;
+}
+.px-3 {
+  padding-inline: 3em;
+}
+.px-4 {
+  padding-inline: 4em;
+}
+.px-5 {
+  padding-inline: 5em;
+}
+/*---------------------*\
+      #Margin Block
+  \*----------------------*/
+.my-0 {
+  margin-block: 0.5em;
+}
+.my-1 {
+  margin-block: 1em;
+}
+.my-2 {
+  margin-block: 2em;
+}
+.my-3 {
+  margin-block: 3em;
+}
+.my-4 {
+  margin-block: 4em;
+}
+.my-5 {
+  margin-block: 5em;
+}
+/*---------------------*\
+      #Margin Inline
+  \*----------------------*/
+.mx-0 {
+  margin-inline: 0.5em;
+}
+.mx-1 {
+  margin-inline: 1em;
+}
+.mx-2 {
+  margin-inline: 2em;
+}
+.mx-3 {
+  margin-inline: 3em;
+}
+.mx-4 {
+  margin-inline: 4em;
+}
+.mx-5 {
+  margin-inline: 5em;
+}
+/*---------------------*\
+      #SVG Icon 
+  \*----------------------*/
+svg {
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+/*---------------------*\
+      #Particles
+  \*----------------------*/
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/*---------------------*\
+      #Body
+\*----------------------*/
+body {
+  overflow-x: hidden; /* Disalbed Horizontal Scroll */
+  font-family: "Poppins", sans-serif;
+}
+/*---------------------*\
+      #Navigation
+\*----------------------*/
+nav {
+  padding: 5px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 1;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  height: 25px;
+  width: auto;
+  margin-right: 10px;
+}
+nav .logo h1 {
+  font-size: 1.1rem;
+  background: linear-gradient(to right, var(--primary) 0%, var(--dark) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: #1f1f1f;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive for tablet */
+@media screen and (max-width: 790px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+/*---------------------*\
+    #First Section
+\*----------------------*/
+
+.title p {
+  font-weight: 800;
+}
+.first-content {
+  position: relative;
+  z-index: 20;
+}
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  max-width: 100%;
+  max-height: 15rem;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-top-right-radius: 70%;
+  border-bottom-right-radius: 70%;
+}
+/*---------------------*\
+      #Second Section
+  \*----------------------*/
+.second-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*---------------------*\
+      #Third Section
+  \*----------------------*/
+.moto-numbers {
+  position: absolute;
+  z-index: -10;
+  font-weight: bold;
+  font-size: 6.5em;
+  top: 735px;
+}
+.moto-title {
+  position: relative;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.moto-title,
+.moto-subtitle {
+  margin-left: 0.8em;
+}
+.moto-subtitle {
+  margin-left: 1.5em;
+  color: var(--secondary);
+}
+.parent-third {
+  position: relative;
+  z-index: -30;
+}
+.parent-third::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, var(--primary) 1px, transparent 1px);
+  background-size: 5px 5px;
+  filter: blur(1px);
+  z-index: -30;
+  /* border-radius: 50%;  */
+}
+.parent-third::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  right: -100px;
+  /* transform: translate(-50%, -50%); */
+  width: 200px;
+  height: 150px;
+  background: radial-gradient(circle, var(--primary) 1px, transparent 1px);
+  background-size: 5px 5px;
+  filter: blur(1px);
+  z-index: -30;
+  /* border-radius: 50%;  */
+}
+/*---------------------*\
+      #Fourth Section
+  \*----------------------*/
+/* .fourth-section{
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/images/working-people.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  } */
+.description-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.to-build {
+  margin-right: 0.2em;
+}
+
+/*---------------------*\
+      #Fifth Section
+  \*----------------------*/
+.fifth-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle-subtitle {
+  margin-bottom: 2em;
+}
+/*---------------------*\
+      #Sixth Section
+  \*----------------------*/
+
+/*---------------------*\
+      #Footer Section
+  \*----------------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .logo a {
+  color: var(--light);
+}
+footer .tabs a {
+  padding-inline: 0.5em;
+  text-decoration: none;
+  color: var(--light);
+}
+
+/*---------------------*\
+      #Carouse Section
+  \*----------------------*/
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: calc(250px * 10);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+/*---------------------*\
+      #Circle Section
+  \*----------------------*/
+.outer-circle {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border: 2px solid var(--bg-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle-2 {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border: 2px solid var(--bg-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle-3 {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  border: 2px solid var(--bg-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle-4 {
+  position: relative;
+  width: 650px;
+  height: 650px;
+  border: 2px solid var(--bg-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark);
+}
+
+.inner-circle p {
+  text-align: center;
+  margin: 1em;
+  padding: 2em;
+}
+
+.small-circle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 20px);
+  transform: translate(-80%, -50%);
+}
+
+.small-circle-2 {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 10px);
+  transform: translate(80%, -50%);
+}
+
+.small-circle-3 {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+  transform: translate(-150%, -250%);
+}
+
+.small-circle-4 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  right: calc(85% + 10px);
+  transform: translate(85%, -400%);
+}
+
+.small-circle-5 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15%;
+  right: calc(100% + 10px);
+  transform: translate(265%, -250%);
+}
+
+.small-circle-6 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15%;
+  left: calc(100% + 10px);
+  transform: translate(-260%, -250%);
+}
+
+.small-circle-7 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 0.5em;
+  position: absolute;
+  top: 20%;
+  left: calc(70% + 10px);
+  transform: translate(-120%, -150%);
+}
+
+.small-circle-8 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 0.5em;
+  position: absolute;
+  bottom: -35%;
+  left: calc(70% + 10px);
+  transform: translate(-375%, -225%);
+}
+
+.small-circle-9 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 0.5em;
+  position: absolute;
+  top: 40%;
+  right: calc(60% + 10px);
+  transform: translate(120%, -400%);
+}
+
+.small-circle-10 {
+  width: 25px;
+  height: 25px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 65%;
+  right: calc(80% + 45px);
+  transform: translate(150%, 550%);
+}
+
+.small-circle-11 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 0.5em;
+  position: absolute;
+  bottom: -20%;
+  left: calc(70% + 10px);
+  transform: translate(-20%, -220%);
+}
+
+.small-circle-12 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 0.5em;
+  position: absolute;
+  top: -40%;
+  right: calc(95% + 10px);
+  transform: translate(120%, 550%);
+}
+
+.small-circle-13 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: calc(100% + 10px);
+  transform: translate(-455%, 50%);
+}
+
+.small-circle,
+.small-circle-7,
+.small-circle-8,
+.small-circle-9,
+.small-circle-11,
+.small-circle-12,
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark);
+  font-size: smaller;
+  font-weight: bold;
+}
