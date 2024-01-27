@@ -70,6 +70,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .description-title strong {
     padding-inline: 0;
@@ -82,7 +83,11 @@
   }
   .description-button {
     margin-block: 1em;
+    text-align: center;
   }
+  .parag br {
+    display: none;
+}
   /*---------------------*\
     #six Section
 \*----------------------*/
@@ -101,6 +106,7 @@
   }
   .to-build{
     margin-inline: 0;
+    margin-right: 5px;
   }
 }
 /* Extra small devices (phones, 600px and down) */
