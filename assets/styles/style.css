@@ -415,8 +415,10 @@ body {
     #Navigation
 \*----------------------*/
 nav.scrolled {
-  background-color: var(--bg-green); /* Specify the background color for the scrolled state */
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  background: linear-gradient(to bottom, rgba(1, 100, 1, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+  /* background-color: var(--bg-green);  */
+  transition: background-color 0.3s ease; 
 }
  /* Style for the scroll-to-top button */
  .scroll-to-top {
@@ -527,7 +529,7 @@ nav ul li a:hover {
   width: 60%;
   height: 100vh;
   padding: 20% 0;
-  background: rgba(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.5s ease-in;
   z-index: 30;
 }
@@ -546,7 +548,7 @@ nav ul li a:hover {
 
 .menubar ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--light);
   font-size: 95%;
   font-weight: 400;
   padding: 5px 10px;
@@ -554,9 +556,13 @@ nav ul li a:hover {
 }
 
 .menubar ul li a:hover {
-  background-color: #f5f5f5;
+  background: linear-gradient(to top, rgba(1, 100, 1, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-
+.hire-me:hover{
+  background: linear-gradient(to top, rgba(1, 100, 1, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 0.5em;
+  color: var(--light);
+}
 /*---------------------*\
     #First Section
 \*----------------------*/
@@ -731,8 +737,8 @@ footer .tabs a {
 \*----------------------*/
 .outer-circle {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 150px;
+  height: 150px;
   border: 2px solid var(--bg-green);
   border-radius: 50%;
   display: flex;
@@ -742,8 +748,8 @@ footer .tabs a {
 
 .outer-circle-2 {
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 200px;
+  height: 200px;
   border: 2px solid var(--bg-green);
   border-radius: 50%;
   display: flex;
@@ -753,8 +759,8 @@ footer .tabs a {
 
 .outer-circle-3 {
   position: relative;
-  width: 550px;
-  height: 550px;
+  width: 250px;
+  height: 250px;
   border: 2px solid var(--bg-green);
   border-radius: 50%;
   display: flex;
@@ -764,8 +770,8 @@ footer .tabs a {
 
 .outer-circle-4 {
   position: relative;
-  width: 650px;
-  height: 650px;
+  width: 300px;
+  height: 300px;
   border: 2px solid var(--bg-green);
   border-radius: 50%;
   display: flex;
@@ -775,8 +781,8 @@ footer .tabs a {
 
 .inner-circle {
   position: absolute;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   background-color: var(--primary);
   border-radius: 50%;
   display: flex;
@@ -787,20 +793,8 @@ footer .tabs a {
 
 .inner-circle p {
   text-align: center;
-  margin: 1em;
-  padding: 2em;
-}
-
-.small-circle {
-  width: 50px;
-  height: 50px;
-  background-color: var(--primary);
-  border-radius: 50%;
-  padding: 0.5em;
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 20px);
-  transform: translate(-80%, -50%);
+  margin: 1.5em;
+  padding: 1.5em;
 }
 
 .small-circle-2 {
@@ -825,108 +819,120 @@ footer .tabs a {
   transform: translate(-150%, -250%);
 }
 
-.small-circle-4 {
+.circle-web {
+  width: 35px;
+  height: 35px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 0.5em;
+  position: absolute;
+  top: 75%;
+  left: calc(85% + 20px);
+  transform: translate(-75%, -40%);
+}
+
+.small-circle-web {
   width: 20px;
   height: 20px;
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  top: 30%;
-  right: calc(85% + 10px);
-  transform: translate(85%, -400%);
+  top: 60%;
+  right: calc(90% + 10px);
+  transform: translate(75%, -410%);
 }
 
-.small-circle-5 {
-  width: 20px;
-  height: 20px;
-  background-color: var(--primary);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 15%;
-  right: calc(100% + 10px);
-  transform: translate(265%, -250%);
-}
-
-.small-circle-6 {
-  width: 20px;
-  height: 20px;
-  background-color: var(--primary);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 15%;
-  left: calc(100% + 10px);
-  transform: translate(-260%, -250%);
-}
-
-.small-circle-7 {
-  width: 50px;
-  height: 50px;
+.circle-games{
+  width: 35x;
+  height: 35px;
   background-color: var(--primary);
   border-radius: 50%;
   padding: 0.5em;
   position: absolute;
   top: 20%;
-  left: calc(70% + 10px);
-  transform: translate(-120%, -150%);
+  left: calc(85% + 10px);
+  transform: translate(-120%, -105%);
 }
 
-.small-circle-8 {
-  width: 50px;
-  height: 50px;
+.small-circle-mobile-2 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10%;
+  right: calc(100% + 10px);
+  transform: translate(265%, -265%);
+}
+
+.small-circle-mobile-1 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30%;
+  left: calc(100% + 10px);
+  transform: translate(-100%, -250%);
+}
+
+.circle-defi {
+  width: 35px;
+  height: 35px;
   background-color: var(--primary);
   border-radius: 50%;
   padding: 0.5em;
   position: absolute;
-  bottom: -35%;
-  left: calc(70% + 10px);
-  transform: translate(-375%, -225%);
+  bottom: -65%;
+  left: calc(90% + 10px);
+  transform: translate(-375%, -265%);
 }
 
-.small-circle-9 {
-  width: 50px;
-  height: 50px;
+.circle-mobile {
+  width: 35px;
+  height: 35px;
   background-color: var(--primary);
   border-radius: 50%;
   padding: 0.5em;
   position: absolute;
-  top: 40%;
+  top: 49%;
   right: calc(60% + 10px);
   transform: translate(120%, -400%);
 }
 
 .small-circle-10 {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  top: 65%;
-  right: calc(80% + 45px);
-  transform: translate(150%, 550%);
+  top: 45%;
+  right: calc(60% + 45px);
+  transform: translate(200%, 735%);
 }
 
 .small-circle-11 {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   background-color: var(--primary);
   border-radius: 50%;
   padding: 0.5em;
   position: absolute;
-  bottom: -20%;
+  bottom: -25%;
   left: calc(70% + 10px);
   transform: translate(-20%, -220%);
 }
 
-.small-circle-12 {
-  width: 50px;
-  height: 50px;
+.circle-ui {
+  width: 35px;
+  height: 35px;
   background-color: var(--primary);
   border-radius: 50%;
   padding: 0.5em;
   position: absolute;
   top: -40%;
-  right: calc(95% + 10px);
-  transform: translate(120%, 550%);
+  right: calc(100% + 10px);
+  transform: translate(110%, 550%);
 }
 
 .small-circle-13 {
@@ -935,15 +941,15 @@ footer .tabs a {
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  top: 15%;
+  top: 0%;
   left: calc(100% + 10px);
-  transform: translate(-455%, 50%);
+  transform: translate(-320%, 150%);
 }
 
-.small-circle,
-.small-circle-7,
-.small-circle-8,
-.small-circle-9,
+.circle-web,
+.circle-games,
+.circle-defi,
+.circle-mobile,
 .small-circle-11,
 .small-circle-12,
 span {
@@ -951,6 +957,7 @@ span {
   justify-content: center;
   align-items: center;
   color: var(--dark);
-  font-size: smaller;
+  font-size: xx-small;
   font-weight: bold;
+  margin: 0.2em;
 }

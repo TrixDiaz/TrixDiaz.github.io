@@ -26,16 +26,16 @@
         </div>
         <ul>
             <li>
-                <a class="text-light" href="#">Home</a>
+                <a class="text-light" href="#home">Home</a>
+            </li>
+            <li>
+                <a class="text-light" href="#">About</a>
             </li>
             <li>
                 <a class="text-light" href="#">Services</a>
             </li>
             <li>
-                <a class="text-light" href="#">Contact Us</a>
-            </li>
-            <li>
-                <a class="text-light" href="#">Hire Me</a>
+                <a class="text-light hire-me" href="#">Hire Me</a>
             </li>
         </ul>
         <div class="hamburger">
@@ -50,13 +50,13 @@
                 <a class="text-light" href="#">Home</a>
             </li>
             <li>
+                <a class="text-light" href="#">About</a>
+            </li>
+            <li>
                 <a class="text-light" href="#">Services</a>
             </li>
             <li>
-                <a class="text-light" href="#">Contact Us</a>
-            </li>
-            <li>
-                <a class="text-light" href="#">Hire Me</a>
+                <a class="text-light hire-me" href="#">Hire Me</a>
             </li>
         </ul>
     </div>
@@ -65,7 +65,7 @@
     <div id="particles-js"></div>
 
     <!-- Landing Page -->
-    <section class="landingPage dotted py-4 my-4">
+    <section id="home" class="landingPage dotted py-4 my-4">
         <div class="container grid-container-2">
             <div class="first-content">
                 <div class="title mx-3">
@@ -92,7 +92,7 @@
     </section>
 
     <!-- Tech Stack -->
-    <section class="py-2 ">
+    <section id="techStack" class="py-2 ">
         <div class="second-content">
             <div class="slider">
                 <div class="slide-track">
@@ -170,22 +170,22 @@
             <div class="moto">
                 <p class="moto-numbers text-xxxl gradient-text moto-number-1">1</p>
                 <p class="moto-title text-md uppercase-text">Simple</p>
-                <p class="moto-subtitle text-sm">Users Interface focuses on anticipating visual design!</p>
+                <p class="moto-subtitle text-sm">Crafting Intuitive Experiences through Proactive Visual Design.</p>
             </div>
             <div class="moto">
                 <p class="moto-numbers text-xxxl gradient-text moto-number-2">2</p>
                 <p class="moto-title text-md uppercase-text moto-title-2">Clear</p>
-                <p class="moto-subtitle text-sm">Workflow & interaction with our Target's!</p>
+                <p class="moto-subtitle text-sm">Elevating Efficiency: Seamless Workflows and Engaging Interactions with Our Targets.</p>
             </div>
             <div class="moto">
                 <p class="moto-numbers text-xxxl gradient-text moto-number-3">3</p>
                 <p class="moto-title text-md uppercase-text">Effective</p>
-                <p class="moto-subtitle text-sm">Journey Integration with third-party API's!</p>
+                <p class="moto-subtitle text-sm">Seamless Journeys: Expert Integration with Third-Party APIs.</p>
             </div>
         </div>
     </section>
 
-    <!--  -->
+    <!-- 2 Card -->
     <section class="py-2 fourth-section ">
         <div class="container fourth-content grid-container-2">
             <div class="description-image">
@@ -212,48 +212,49 @@
         </div>
     </section>
 
-    <!-- <section class="py-2">
+    <!-- Circle -->
+     <section class="py-2">
         <div class="container-fluid fifth-content">
-            <div class="circle-title">
-                <p class="text-xxl bold">AN <strong class="text-primary">Ecosystem</strong> from getting all</p>
+            <div class="mx-1 circle-title">
+                <p class="text-xxl bold text-wrap">AN <strong class="text-primary">Ecosystem</strong> from getting all</p>
             </div>
-            <div class="circle-subtitle py-1">
-                <p class="text-xl"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, at.</p>
+            <div class="mx-1 circle-subtitle py-1">
+                <p class="text-lg text-wrap"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, at.</p>
             </div>
             <div class="outer-circle-4">
-                <div class="small-circle-12">
-                    <span class="text-xs bold">Exchange</span>
+                <div class="circle-ui">
+                    <span class="text-xs bold">UI</span>
                 </div>
                 <div class="small-circle-13">
                     <span></span>
                 </div>
                 <div class="outer-circle-3">
-                    <div class="small-circle-9">
-                        <span class="text-xs bold">Metaverse</span>
+                    <div class="circle-mobile">
+                        <span class="text-xs bold">Mobile</span>
                     </div>
                     <div class="outer-circle-2">
-                        <div class="small-circle-4">
+                        <div class="small-circle-web">
                             <span></span>
                         </div>
                         <div class="outer-circle">
                             <div class="inner-circle">
-                                <p class="text-md bold">A Decentralized Transaction Layer for the Internet</p>
+                                <p class="text-xs bold">A Decentralized Transaction Layer for the Internet</p>
                             </div>
-                            <div class="small-circle-7">
-                                <span>Games</span>
+                            <div class="circle-games">
+                                <span>App</span>
                             </div>
-                            <div class="small-circle-8">
-                                <span>Defi</span>
+                            <div class="circle-defi">
+                                <span>UX</span>
                             </div>
                         </div>
-                        <div class="small-circle">
-                            <span>Web 3.0</span>
+                        <div class="circle-web">
+                            <span>Web</span>
                         </div>
                     </div>
-                    <div class="small-circle-6">
+                    <div class="small-circle-mobile-1">
                         <span></span>
                     </div>
-                    <div class="small-circle-5">
+                    <div class="small-circle-mobile-2">
                         <span></span>
                     </div>
                 </div>
@@ -265,9 +266,10 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
 
-    <section class="py-2 six-section dotted">
+    <!-- 2 Card -->
+    <section  class="py-2 six-section dotted">
         <div class="container sixth-content grid-container-3">
             <div class="content-left grid-item-2">
                 <div class="content-title">
@@ -295,10 +297,11 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <section class="footer">
         <footer class="container">
             <div class="logo">
-                <a href="#">
+                <a href="#home">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                         viewBox="0,0,256,256">
                         <g fill="#fbfbff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -315,7 +318,8 @@
                 </a>
             </div>
             <div class="tabs">
-                <a href="#">
+                <!-- Facebook icon -->
+                <a href="https://www.facebook.com/profile.php?id=100085677631685" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                         viewBox="0,0,256,256">
                         <g fill="#fbfbff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -328,8 +332,10 @@
                                 </path>
                             </g>
                         </g>
-                    </svg></a>
-                <a href="#">
+                    </svg>
+                </a>
+                <!-- Instagram icon -->
+                <a href="https://www.instagram.com/john_darlucio/?igsh=NHNnM3Jsamg0b2Fj&utm_source=qr&fbclid=IwAR25HDmJp58G7729HaYty3GFKcpmS2dPO4nZd9ED6MvOUNUiezK3JGMEuuc" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                         viewBox="0,0,256,256">
                         <g fill="#fbfbff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -344,7 +350,8 @@
                         </g>
                     </svg>
                 </a>
-                <a href="#">
+                <!-- Github Icon -->
+                <a href="https://github.com/TrixDiaz" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                         viewBox="0,0,256,256">
                         <g fill="#fbfbff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -359,7 +366,8 @@
                         </g>
                     </svg>
                 </a>
-                <a href="#">
+                <!-- Gmail Icon -->
+                <a href="mailto:"john.darlucio@gmail.com" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                         viewBox="0,0,256,256">
                         <g fill="#fbfbff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
