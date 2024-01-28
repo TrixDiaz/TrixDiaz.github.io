@@ -602,6 +602,15 @@ nav ul li a:hover {
   align-items: center;
 }
 /*---------------------*\
+    #Smarter
+\*----------------------*/
+.smart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*---------------------*\
     #Third Section
 \*----------------------*/
 .moto-numbers {
