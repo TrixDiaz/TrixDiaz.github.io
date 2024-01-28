@@ -107,7 +107,7 @@ particlesJS("particles-js", {
   
   // Change text 
   function changeText(button) {
-      button.textContent = "Click to View";
+      button.textContent = "Download";
   }
   function resetText(button) {
       button.textContent = "Resume";
@@ -205,3 +205,27 @@ window.addEventListener('click', function(event) {
     modal.style.display = 'none';
   }
 });
+
+// Download Document
+function downloadResume() {
+  // Define the file path
+  var filePath = 'assets/Document/resume.pdf'; // Update with the actual filename and extension
+
+  // Create a link element
+  var link = document.createElement('a');
+
+  // Set the href attribute to the file path
+  link.href = filePath;
+
+  // Set the download attribute with the desired file name
+  link.download = 'MyResume.pdf'; // Update with the actual filename and extension
+
+  // Append the link to the body
+  document.body.appendChild(link);
+
+  // Programmatically trigger a click event on the link to start the download
+  link.click();
+
+  // Remove the link from the document
+  document.body.removeChild(link);
+}
