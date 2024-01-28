@@ -19,18 +19,17 @@
 \*----------------------*/
 /* The whole scrollbar */
 ::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.2rem;
 }
 
 /* The whole Scrollbar Track / Vertical Track */
 ::-webkit-scrollbar-track {
-  background: #d1e5ff;
+  background: var(--gray);
 }
 
 /* The scrollbar thumb or the hand on track */
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#083817, #227411);
-  border-radius: 1rem;
 }
 /*---------------------*\
     #Colors 
