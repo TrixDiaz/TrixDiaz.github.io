@@ -28,6 +28,7 @@
   .profile-section {
     order: -1; /* Move the profile-section to the top for smaller screens */
     margin-bottom: 1em;
+    margin-block: 2em;
   }
   /*---------------------*\
     #First Section
