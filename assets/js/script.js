@@ -188,3 +188,20 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+
+// Project Modal
+function projectOpenModal() {
+  document.getElementById('projectModal').style.display = 'block';
+}
+
+function projectCloseModal() {
+  document.getElementById('projectModal').style.display = 'none';
+}
+
+// Close modal if clicked outside the modal content
+window.addEventListener('click', function(event) {
+  var modal = document.getElementById('projectModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
