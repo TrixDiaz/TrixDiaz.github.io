@@ -1,5 +1,5 @@
 /* Responsive for tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
   /*---------------------*\
     #Navigation
 \*----------------------*/
@@ -109,6 +109,9 @@
     margin-inline: 0;
     margin-right: 5px;
   }
+  .modal-content{
+    width: 100%;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -132,7 +135,7 @@
     margin-inline: 1em;
   }
   /*---------------------*\
-    #Fourth Content
+    #Projects Content
 \*----------------------*/
   .fourth-section .grid-container-2 {
     margin-inline: 1em;
@@ -141,7 +144,7 @@
     gap: 0;
   }
   /*---------------------*\
-    #Six Section
+    #Services Section
 \*----------------------*/
   .six-section {
     padding-block: 0;

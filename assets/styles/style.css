@@ -411,6 +411,10 @@ body {
   font-family: "Poppins", sans-serif;
   max-width: 100%;
 }
+.photo{
+  max-width: 100%;
+  object-fit: cover;
+}
 /*---------------------*\
     #Navigation
 \*----------------------*/
@@ -999,6 +1003,7 @@ span {
   border-radius: 1em;
   max-height: 80%; 
   overflow-y: auto; 
+  width: 80%;
 }
 
 .close {
