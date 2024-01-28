@@ -826,18 +826,18 @@ footer .tabs a {
   border-radius: 50%;
   padding: 0.5em;
   position: absolute;
-  top: 75%;
-  left: calc(85% + 20px);
+  top: 60%;
+  left: calc(90% + 20px);
   transform: translate(-75%, -40%);
 }
 
 .small-circle-web {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  top: 60%;
+  top: 45%;
   right: calc(90% + 10px);
   transform: translate(75%, -410%);
 }
@@ -855,25 +855,25 @@ footer .tabs a {
 }
 
 .small-circle-mobile-2 {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  bottom: -10%;
+  bottom: 20%;
   right: calc(100% + 10px);
-  transform: translate(265%, -265%);
+  transform: translate(230%, -265%);
 }
 
 .small-circle-mobile-1 {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  bottom: 30%;
+  bottom: 45%;
   left: calc(100% + 10px);
-  transform: translate(-100%, -250%);
+  transform: translate(-150%, -250%);
 }
 
 .circle-defi {
@@ -901,47 +901,46 @@ footer .tabs a {
 }
 
 .small-circle-10 {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  top: 45%;
+  top: 70%;
   right: calc(60% + 45px);
   transform: translate(200%, 735%);
 }
 
 .small-circle-11 {
-  width: 35px;
-  height: 35px;
+  width: 10px;
+  height: 10px;
   background-color: var(--primary);
   border-radius: 50%;
   padding: 0.5em;
   position: absolute;
-  bottom: -25%;
+  bottom: -4%;
   left: calc(70% + 10px);
   transform: translate(-20%, -220%);
 }
 
 .circle-ui {
-  width: 35px;
-  height: 35px;
+  width: 10px;
+  height: 10px;
   background-color: var(--primary);
   border-radius: 50%;
-  padding: 0.5em;
   position: absolute;
-  top: -40%;
+  top: 25%;
   right: calc(100% + 10px);
-  transform: translate(110%, 550%);
+  transform: translate(150%, 600%);
 }
 
 .small-circle-13 {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  top: 0%;
+  top: 20%;
   left: calc(100% + 10px);
   transform: translate(-320%, 150%);
 }
