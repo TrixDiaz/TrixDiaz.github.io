@@ -847,18 +847,18 @@ footer .tabs a {
 }
 
 .small-circle-web {
-  width: 10px;
-  height: 10px;
+  width: 35px;
+  height: 35px;
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  top: 45%;
+  top: 85%;
   right: calc(90% + 10px);
   transform: translate(75%, -410%);
 }
 
 .circle-games{
-  width: 35x;
+  width: 35px;
   height: 35px;
   background-color: var(--primary);
   border-radius: 50%;
@@ -955,13 +955,14 @@ footer .tabs a {
   background-color: var(--primary);
   border-radius: 50%;
   position: absolute;
-  top: 20%;
-  left: calc(100% + 10px);
-  transform: translate(-320%, 150%);
+  top: 0%;
+  left: calc(90% + 10px);
+  transform: translate(-300%, 350%);
 }
 
 .circle-web,
 .circle-games,
+.small-circle-web,
 .circle-defi,
 .circle-mobile,
 .small-circle-11,
@@ -971,7 +972,7 @@ span {
   justify-content: center;
   align-items: center;
   color: var(--dark);
-  font-size: xx-small;
+  font-size: x-small;
   font-weight: bold;
   margin: 0.2em;
 }
