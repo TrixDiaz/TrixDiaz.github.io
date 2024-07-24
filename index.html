@@ -20,6 +20,7 @@
 </head>
 
 <body class="bg-dark text-light">
+
     <!-- Navigation -->
     <nav>
         <div class="logo">
@@ -82,8 +83,8 @@
                 </div>
                 <div class="title-buttons py-0 mx-3">
                     <button class="text-primary" onclick="window.location='#threeWays'">Get started</button>
-                    <button class="bg-primary text-dark" onmouseover="changeText(this)"
-                        onmouseout="resetText(this)" onclick="downloadResume()">Resume</button>
+                    <button class="bg-primary text-dark" onmouseover="changeText(this)" onmouseout="resetText(this)"
+                        onclick="downloadResume()">Resume</button>
                 </div>
             </div>
             <div class="profile-section">
@@ -220,7 +221,7 @@
                     remarkable achievements.
                 </div>
                 <div class="description-button py-0 px-2 mx-5">
-                    <button class="py-0 px-1" onclick="projectOpenModal()">Learn More</button>
+                    <button class="py-0 px-1" onclick="projectOpenModal()">View Created Project</button>
                 </div>
                 <!-- Project Modal -->
                 <div class="modal" id="projectModal">
@@ -232,18 +233,20 @@
                                 <div class="title bold text-lg text-primary">Multi-Flatform Commerce</div>
                                 <div class="description text-md">
                                     <p>
-                                        Introducing our cutting-edge Dynamic Multi-Platform E-commerce and Freelance solution—a revolutionary ecosystem that seamlessly integrates the worlds of online commerce and freelance services.
+                                        Introducing our cutting-edge Dynamic Multi-Platform E-commerce and Freelance
+                                        solution—a revolutionary ecosystem that seamlessly integrates the worlds of
+                                        online commerce and freelance services.
                                     </p>
                                 </div>
                                 <div class="language">
                                     <h5>Laravel | Tailwind | Filament</h5>
                                 </div>
-                                <div class="link">
+                                <!-- <div class="link">
                                     <a href="https://github.com/TrixDiaz/Aimporo" target="_blank">
                                         <h5 class="text-primary">Code</h5>
                                         <i class="bi bi-github"></i>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="mx-1 my-2 grid-container-2">
@@ -252,19 +255,20 @@
                                 <div class="description text-md">
                                     <p>The Dental Clinic Reservation System with Doctor's Approval and Email
                                         Notification is an advanced streamline
-                                        the appointment booking process for patients while ensuring seamless communication
+                                        the appointment booking process for patients while ensuring seamless
+                                        communication
                                         between patients and dental practitioners.
                                     </p>
                                 </div>
                                 <div class="language">
                                     <h5>Laravel | Tailwind</h5>
                                 </div>
-                                <div class="link">
+                                <!-- <div class="link">
                                     <a href="https://github.com/TrixDiaz/Dental_Appoinment_System">
                                         <h5 class="text-primary">Code</h5>
                                         <i class="bi bi-github"></i>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="item-1"><img class="photo" src="assets/images/Dental.PNG" alt="Baranggay"></div>
                         </div>
@@ -274,18 +278,19 @@
                                 <div class="title bold text-lg text-primary">Geotrigoal Quiz App</div>
                                 <div class="description text-md">
                                     <p>
-                                        Introducing Geotrigoal Quiz App—an immersive and interactive way to explore the world through geography-themed quizzes. 
+                                        Introducing Geotrigoal Quiz App—an immersive and interactive way to explore the
+                                        world through geography-themed quizzes.
                                     </p>
                                 </div>
                                 <div class="language">
                                     <h5>Laravel | Tailwind | Filament</h5>
                                 </div>
-                                <div class="link">
+                                <!-- <div class="link">
                                     <a href="https://github.com/TrixDiaz/Quiz_App">
                                         <h5 class="text-primary">Code</h5>
                                         <i class="bi bi-github"></i>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -387,6 +392,33 @@
         </div>
     </section>
 
+    <!-- Front End Cards -->
+    <section id="threeWays" class="py-5 threeWays">
+        <div class="container third-content grid-container-3">
+            <div class="moto">
+                <p class="moto-numbers text-xxxl gradient-text moto-number-1">To Do</p>
+                <p class="moto-title text-md uppercase-text">
+                    <a href="https://vue-to-do-app-two.vercel.app/" target="_blank" style="color: var(--primary);">View Demo</a>
+                </p>
+                <p class="moto-subtitle text-sm">Vue JS To Do App using LocalStorage</p>
+            </div>
+            <div class="moto">
+                <p class="moto-numbers text-xxxl gradient-text moto-number-2">Weather</p>
+                <p class="moto-title text-md uppercase-text moto-title-2">
+                    <a href="https://vue-weather-app-lovat-five.vercel.app/" target="_blank" style="color: var(--primary);">View Demo</a>
+                </p>
+                <p class="moto-subtitle text-sm">Vue JS Simple Weather Application</p>
+            </div>
+            <div class="moto">
+                <p class="moto-numbers text-xxxl gradient-text moto-number-3">Blog</p>
+                <p class="moto-title text-md uppercase-text">
+                    <a href="https://vue-blog-template.vercel.app/" target="_blank" style="color: var(--primary);">View Demo</a>
+                </p>
+                <p class="moto-subtitle text-sm">Vue JS Blog Template</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="py-2 six-section dotted-middle">
         <div class="container sixth-content grid-container-3">
@@ -404,7 +436,9 @@
                         websites.</p>
                 </div>
                 <div class="content-button">
-                    <button class="py-0 px-1 content-button" onclick="window.open('https://www.facebook.com/profile.php?id=100085677631685', '_blank')">Learn more</button>
+                    <button class="py-0 px-1 content-button"
+                        onclick="window.open('https://www.facebook.com/profile.php?id=100085677631685', '_blank')">Learn
+                        more</button>
                 </div>
             </div>
             <div class="content-image my-1">

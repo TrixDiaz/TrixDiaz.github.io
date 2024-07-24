@@ -113,7 +113,7 @@ particlesJS("particles-js", {
       button.textContent = "Resume";
   }
   // Loop Typing Text
-  const texts = ["Web Developer", "IT Specialist", "App Developer", "IT Technician"];
+  const texts = ["Web Developer", "IT Specialist", "IT Technician"];
   
   const typingSpeed = 100; // Adjust this value to control the typing speed (in milliseconds)
   
