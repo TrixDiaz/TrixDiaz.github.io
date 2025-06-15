@@ -9,7 +9,7 @@ particlesJS("particles-js", {
         },
       },
       color: {
-        value: "#355E3B",
+        value: "#ffffff",
       },
       shape: {
         type: "circle",
@@ -113,7 +113,7 @@ particlesJS("particles-js", {
       button.textContent = "Resume";
   }
   // Loop Typing Text
-  const texts = ["Web Developer", "IT Specialist", "IT Technician"];
+  const texts = ["Junior Full Stack Developer", "System Engineer", "IT Specialist"];
   
   const typingSpeed = 100; // Adjust this value to control the typing speed (in milliseconds)
   
